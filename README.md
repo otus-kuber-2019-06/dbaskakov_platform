@@ -1,7 +1,7 @@
 # dbaskakov_platform
 dbaskakov Platform repository
 
-# Homework 1
+# Homework 1 (kubernetes-intro)
 
 ```
 Создали nginx-pod , в который запихнули страничку с помощью initContainer
