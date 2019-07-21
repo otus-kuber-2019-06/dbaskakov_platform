@@ -5,8 +5,9 @@ dbaskakov Platform repository
 ```
 kubectl get clusterroles | grep -v system:
 
-выполнить команду под другим пользователем
-kubectl
+
+kubectl auth can-i get deployments --as system:serviceaccount:prometheus:carol
+kubectl auth can-i list pods --as system:serviceaccount:prometheus:carol -n prometheus
 ```
 
 # Homework 1 (kubernetes-intro)
