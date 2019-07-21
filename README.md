@@ -1,6 +1,14 @@
 # dbaskakov_platform
 dbaskakov Platform repository
 
+# Homework 2 (kubernetes-security)
+```
+kubectl get clusterroles | grep -v system:
+
+выполнить команду под другим пользователем
+kubectl
+```
+
 # Homework 1 (kubernetes-intro)
 
 ```
