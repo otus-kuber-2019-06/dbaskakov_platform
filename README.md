@@ -1,6 +1,9 @@
 # dbaskakov_platform
 dbaskakov Platform repository
 
+# Homework 3 (kubernetes-networks)
+
+
 # Homework 2 (kubernetes-security)
 ```
 kubectl get clusterroles | grep -v system:
