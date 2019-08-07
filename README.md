@@ -15,6 +15,8 @@ minikube cant start with IPVS now =\
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/static/mandatory.yaml
 
 minikube addons enable ingress
+
+curl -H 'canary: true' http://canary.softpro.site/
 ```
 
 # Homework 2 (kubernetes-security)
