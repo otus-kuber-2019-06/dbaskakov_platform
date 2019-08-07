@@ -1,0 +1,20 @@
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: myingress-canary
+  annotations:
+    nginx.ingress.kubernetes.io/canary: "true"
+    nginx.ingress.kubernetes.io/canary-weight: '100'
+    nginx.ingress.kubernetes.io/rewrite-target: /
+    #canary-weight: '10'
+    #canary-by-cookie: tester
+spec:
+  rules:
+     - host: ingress.sp.local
+       http:
+        paths:
+          - path: /canary
+            backend:
+              serviceName: myapp-canary
+              servicePort: 80
