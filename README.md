@@ -1,6 +1,24 @@
 # dbaskakov_platform
 dbaskakov Platform repository
 
+# Homework 3 (kubernetes-networks)
+
+```
+iptables --list -nv -t nat
+
+kubectl apply -f
+
+metallb -- https://raw.githubusercontent.com/google/metallb/v0.8.0/manifests/metallb.yaml
+
+minikube cant start with IPVS now =\
+
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/static/mandatory.yaml
+
+minikube addons enable ingress
+
+curl -H 'canary: true' http://canary.softpro.site/
+```
+
 # Homework 2 (kubernetes-security)
 ```
 kubectl get clusterroles | grep -v system:
