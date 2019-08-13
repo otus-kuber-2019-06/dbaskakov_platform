@@ -1,6 +1,25 @@
 # dbaskakov_platform
 dbaskakov Platform repository
 
+# Homework 4 (kubernetes-volumes)
+
+
+```
+curl -Lo ./kind-darwin-amd64 https://github.com/kubernetes-sigs/kind/releases/download/v0.4.0/kind-darwin-amd64
+chmod +x ./kind-darwin-amd64
+mv ./kind-darwin-amd64 /usr/local/bin/kind
+
+kind create cluster
+export KUBECONFIG="$(kind get kubeconfig-path --name="kind")"
+
+
+kubectl get statefulsets
+kubectl get pods
+kubectl get pvc
+kubectl get pv
+
+```
+
 # Homework 3 (kubernetes-networks)
 
 ```
