@@ -2,7 +2,23 @@
 dbaskakov Platform repository
 
 # Homework 6 (kubernetes-debug)
+```
+strace -c -p1
+в манифесте указана старая версия образа ( в коде нету добавления capability SYS_PTRACE ), поэтому выкачиваем манифест и меняем тэг на latest
 
+iptables --list -nv | grep DROP
+iptables --list -nv | grep LOG
+
+
+kubectl apply -f kit/kit-clusterrole.yaml
+kubectl apply -f kit/kit-serviceaccount.yaml
+kubectl apply -f kit/kit-clusterrolebinding.yaml
+kubectl apply -f kit/netperf-calico-policy.yaml
+kubectl apply -f kit/iptables-tailer.yaml
+k apply -f kit/cr.yaml
+
+kubectl describe netperf.app.example.com/example
+```
 
 # Homework 4 (kubernetes-volumes)
 
@@ -28,7 +44,7 @@ kubectl get pv
 ```
 iptables --list -nv -t nat
 
-kubectl apply -f
+kubectl apply -fs
 
 metallb -- https://raw.githubusercontent.com/google/metallb/v0.8.0/manifests/metallb.yaml
 
