@@ -1,6 +1,9 @@
 # dbaskakov_platform
 dbaskakov Platform repository
 
+# Homework 6 (kubernetes-debug)
+
+
 # Homework 4 (kubernetes-volumes)
 
 
